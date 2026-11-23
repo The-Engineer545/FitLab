@@ -35,8 +35,8 @@ para fotografiar tu ropa, combinarla sobre un maniquí y saber si los colores co
 Necesitas **Windows 10 u 11** y el **[SDK de .NET 10](https://dotnet.microsoft.com/download/dotnet/10.0)**.
 
 ```bash
-git clone https://github.com/The-Engineer545/FitLbab.git
-cd FitLbab
+git clone https://github.com/The-Engineer545/FitLab.git
+cd FitLab
 dotnet run --project frontend
 ```
 
