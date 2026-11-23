@@ -7,9 +7,6 @@ TestResults/
 *.trx
 coverage*.xml
 
-# Capturas y datos de prueba generados
-shots/
-
 # Datos de la app: nunca se suben (cuentas, contraseñas cifradas y fotos personales).
 # Normalmente están en %LOCALAPPDATA%\FitLab, pero FITLAB_DATA puede apuntar a otra carpeta.
 *.db

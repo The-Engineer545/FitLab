@@ -1,0 +1,21 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{csproj,slnx,props,targets,xml,json,yml,yaml}]
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.cs]
+# Avisos de código que sobra (Visual Studio los marca mientras se escribe).
+dotnet_diagnostic.IDE0051.severity = warning   # miembro privado sin usar
+dotnet_diagnostic.IDE0052.severity = warning   # miembro privado que se asigna pero no se lee
+dotnet_diagnostic.IDE0060.severity = warning   # parámetro sin usar
+dotnet_diagnostic.IDE0005.severity = warning   # using innecesario
