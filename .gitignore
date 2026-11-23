@@ -1,0 +1,31 @@
+# Resultados de compilación (en cualquier carpeta: app, backend y tests)
+bin/
+obj/
+
+# Resultados de las pruebas
+TestResults/
+*.trx
+coverage*.xml
+
+# Capturas y datos de prueba generados
+shots/
+
+# Datos de la app: nunca se suben (cuentas, contraseñas cifradas y fotos personales).
+# Normalmente están en %LOCALAPPDATA%\FitLab, pero FITLAB_DATA puede apuntar a otra carpeta.
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+fotos/
+
+# Archivos del editor y del sistema
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.rsuser
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.log

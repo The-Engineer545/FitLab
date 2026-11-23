@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Programa de FitLab. El código está separado en dos carpetas:
+       frontend/  pantallas y controles (lo que se ve)
+       backend/   datos y reglas (base de datos, cuentas, fotos, armonía de colores) -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>FitLab</AssemblyName>
+    <RootNamespace>FitLab</RootNamespace>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ApplicationVisualStyles>true</ApplicationVisualStyles>
+    <ApplicationDefaultFont>Segoe UI, 9.75pt</ApplicationDefaultFont>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <NoWarn>CA1416;WFO1000;WFAC010</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="frontend\**\*.cs" Exclude="frontend\bin\**;frontend\obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="backend\FitLab.Backend.csproj" />
+  </ItemGroup>
+
+</Project>
